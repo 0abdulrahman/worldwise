@@ -1,0 +1,54 @@
+.loginToast {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 690px) {
+  .loginToast {
+    position: absolute !important;
+  }
+}
+
+.loginToast .img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #ffda94;
+}
+
+.loginToast .img img {
+  width: 100%;
+}
+
+.loginToast p {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.loginToast button {
+  border: 1px solid #ffda94;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  line-height: 1;
+  margin-right: 0.25rem;
+}
+
+.loginToast button:hover {
+  background-color: #ffda94;
+  color: #1a1a1a;
+}

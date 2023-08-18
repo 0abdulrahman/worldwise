@@ -1,0 +1,78 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+:global(.form-loading) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.group label {
+  font-weight: 500;
+  color: #ffda94;
+}
+
+.group input,
+.group textarea {
+  border-radius: 0;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.group input:focus,
+.group textarea:focus {
+  outline: none;
+}
+
+.group textarea {
+  resize: vertical;
+  min-height: 70px;
+  max-height: 250px;
+}
+
+.group span {
+  position: absolute;
+  right: 9px;
+  bottom: 11px;
+  width: 20px;
+  height: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button:last-of-type {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffda94;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btns button:last-of-type:hover {
+  background-color: #ffda94;
+  color: #000;
+}
+
+@media (max-width: 690px) {
+  .form {
+    gap: 0.5rem;
+  }
+}

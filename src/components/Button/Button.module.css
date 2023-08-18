@@ -1,0 +1,19 @@
+.button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffda94;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ffda94;
+  color: #000;
+}
+
+.button:hover a {
+  color: #000;
+}

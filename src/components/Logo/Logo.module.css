@@ -1,0 +1,19 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.img {
+  max-width: 70px;
+  filter: invert(1);
+}
+
+@media (max-width: 690px) {
+  .img {
+    max-width: 50px;
+  }
+}

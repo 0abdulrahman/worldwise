@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "cityName": "Karaaul",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2023-08-10T00:00:00.000Z",
+      "notes": "",
+      "position": {
+        "lat": 48.51681799467422,
+        "lng": 80.03518023689857
+      },
+      "id": 98443245
+    },
+    {
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2023-08-11T00:00:00.000Z",
+      "notes": "",
+      "position": {
+        "lat": 30.1397249,
+        "lng": 31.3403695
+      },
+      "id": 98443249
+    },
+    {
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2023-08-12T00:00:00.000Z",
+      "notes": "",
+      "position": {
+        "lat": 29.83052943793282,
+        "lng": 31.378247605987205
+      },
+      "id": 98443253
+    },
+    {
+      "cityName": "Al Ḩammam",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2023-08-12T00:00:00.000Z",
+      "notes": "",
+      "position": {
+        "lat": 29.75980574190089,
+        "lng": 28.673189107603175
+      },
+      "id": 98443254
+    }
+  ]
+}

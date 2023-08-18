@@ -1,0 +1,33 @@
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #333333;
+  position: relative;
+  width: calc(50% - 0.5rem);
+}
+
+.country::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #ffda94;
+}
+
+.country > p:first-of-type {
+  font-size: 2rem;
+  line-height: 1;
+}
