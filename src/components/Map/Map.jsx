@@ -24,7 +24,7 @@ function Map() {
     <section className={styles.map}>
       <UserPositionBtn handleClick={() => getLocation()} loading={loading} />
       <LoginToast />
-      <MapContainer center={currentMapPosition} zoom={8} scrollWheelZoom={true}>
+      <MapContainer center={currentMapPosition} zoom={6} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
