@@ -110,7 +110,8 @@ function AuthProvider({ children }) {
             dispatch({ type: "error", payload: data.message });
           } else {
             localStorage.setItem("WorldWiseUser", data.data.userId);
-            dispatch({ type: "registered", payload: data });
+            console.log(data);
+            dispatch({ type: "registered", payload: data.data });
             navigate("/worldwise/app");
           }
         }
