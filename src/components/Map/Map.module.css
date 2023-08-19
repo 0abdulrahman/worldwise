@@ -1,5 +1,10 @@
 @import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
 
+body:has(.map) header {
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
 .map {
   flex: 1;
   background-color: #aad3df;
@@ -69,8 +74,16 @@
 }
 
 @media (max-width: 690px) {
+  .usePositionBtn {
+    padding: 0.55rem 1rem;
+    font-size: 0.75rem;
+    bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 690px) {
   .map > :global(.leaflet-container) {
-    height: calc(50vh - 82.13px);
+    height: calc(60vh - 82.13px);
     position: relative !important;
   }
   :global(.leaflet-control-attribution) {
