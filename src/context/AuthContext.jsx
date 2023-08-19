@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 // eslint-disable-next-line react-refresh/only-export-components
 const AuthContext = createContext();
 
-const BASE_URL = "http://worldwiseapi.somee.com/api";
+const BASE_URL = "https://worldwiseapi.somee.com/api";
 
 const intitalState = { loading: false, error: "", user: null };
 
@@ -59,7 +59,7 @@ function AuthProvider({ children }) {
       try {
         dispatch({ type: "loading" });
 
-        const res = await fetch("http://worldwiseapi.somee.com/api/users/login", {
+        const res = await fetch(`${BASE_URL}/users/login`, {
           method: "POST",
           body: JSON.stringify(loginDetails),
           headers: {
@@ -96,7 +96,7 @@ function AuthProvider({ children }) {
       try {
         dispatch({ type: "loading" });
 
-        const res = await fetch("http://worldwiseapi.somee.com/api/users/register", {
+        const res = await fetch(`${BASE_URL}/users/register`, {
           method: "POST",
           body: registerDetails,
         });

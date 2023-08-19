@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useMemo, useReducer } from "react";
 import PropTypes from "prop-types";
 
-const BASE_URL = "http://worldwiseapi.somee.com/api";
+const BASE_URL = "https://worldwiseapi.somee.com/api";
 
 const CitiesContext = createContext();
 
