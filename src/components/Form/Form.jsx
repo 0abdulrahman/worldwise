@@ -86,7 +86,7 @@ function Form() {
             <textarea id="city-notes" value={notes} onChange={(e) => setNotes(e.target.value)}></textarea>
           </div>
           <div className={styles.btns}>
-            <BackButton onClick={() => navigate("/app/cities")} />
+            <BackButton onClick={() => navigate("/worldwise/app/cities")} />
             <Button onClick={handleAdd}>Add</Button>
           </div>
         </form>
